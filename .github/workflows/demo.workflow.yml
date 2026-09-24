@@ -16,3 +16,8 @@ jobs:
               run: |
                   ls ${{ github.workspace }}
             - run: echo "🍏 This job's status is ${{ job.status }}."
+
+    Second-job:
+        runs-on: ubuntu:latest
+        steps:
+            - run: echo "Hello from the sceond jobs"
